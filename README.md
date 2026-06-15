@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Website
 
 A modern and responsive portfolio website built using HTML, CSS, and JavaScript.
@@ -73,3 +74,7 @@ index.html
 ## License
 
 This project is open for learning and personal use.
+=======
+# portfolio-1
+This is my first portfolio
+>>>>>>> c2cbc28f269e6ff750c68b899cdce076a1a77312
