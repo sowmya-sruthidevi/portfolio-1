@@ -25,21 +25,20 @@
             <div class="nav-links" id="navLinks">
                 <a href="#hero">Home</a>
                 <a href="#about">About</a>
-                <a href="#skills">Skills</a>
+                <a href="#skills">Tech Stack</a>
                 <a href="#projects">Projects</a>
                 <a href="#certifications">Certifications</a>
-                <a href="#blog">Blog</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="nav-extras">
-                <button id="theme-toggle" class="theme-btn">
+                <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle theme">
                     <i class="fas fa-moon" id="theme-icon"></i>
                 </button>
-                <div class="hamburger" id="hamburger">
+                <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation menu" aria-controls="navLinks" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
@@ -49,6 +48,7 @@
         <section id="hero" class="hero-section">
             <div class="container">
                 <div class="hero-content" data-aos="fade-up">
+                    <p class="hero-greeting">Hi, I'm</p>
                     <h1 class="glitch-text">Sowmya Sruthi Devi Nimmala</h1>
                     <p class="tagline">AI & Data Science Student | Building Intelligent Solutions</p>
                     <p class="intro-text">
@@ -65,7 +65,7 @@
                 <div class="hero-image" data-aos="fade-left">
                     <div class="image-wrapper">
                         <div class="ai-orb"></div>
-                        <img src="assets/profile.jpeg" alt="Sowmya Sruthi Devi Nimmala" class="profile-img">
+                        <img src="assets/profile1.jpeg" alt="Sowmya Sruthi Devi Nimmala" class="profile-img" loading="eager" fetchpriority="high" decoding="async">
                     </div>
                 </div>
             </div>
@@ -103,45 +103,34 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Tech Stack Section -->
         <section id="skills" class="skills-section">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
-                <div class="skills-grid">
-                    <!-- Languages -->
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="section-title" data-aos="fade-up">Tech Stack</h2>
+                <div class="tech-stack-grid">
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
                         <h3>Languages</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <span class="skill-name">C</span>
-                                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Java</span>
-                                <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Python</span>
-                                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                            </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill">C</span>
+                            <span class="tech-pill">Java</span>
+                            <span class="tech-pill">Python</span>
                         </div>
                     </div>
-                    <!-- Web Dev -->
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="160">
                         <h3>Web Development</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <span class="skill-name">HTML5</span>
-                                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">CSS3</span>
-                                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">JavaScript</span>
-                                <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
-                            </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill">HTML</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="280">
+                        <h3>Tools &amp; Platforms</h3>
+                        <div class="tech-pills">
+                            <span class="tech-pill">Git</span>
+                            <span class="tech-pill">GitHub</span>
+                            <span class="tech-pill">VS Code</span>
                         </div>
                     </div>
                 </div>
@@ -156,7 +145,7 @@
                     <!-- Project 1 -->
                     <div class="project-card" data-aos="zoom-in">
                         <div class="project-img">
-                            <img src="assets/waste to value.jpeg" alt="Project 1">
+                            <img src="assets/waste to value.jpeg" alt="Project 1" loading="lazy" decoding="async">
                         </div>
                         <div class="project-info">
                             <h3>Waste to Value</h3>
@@ -173,7 +162,7 @@
                     <!-- Project 2 -->
                     <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
                         <div class="project-img">
-                            <img src="assets/hiregenics.jpeg" alt="Project 2">
+                            <img src="assets/hiregenics.jpeg" alt="Project 2" loading="lazy" decoding="async">
                         </div>
                         <div class="project-info">
                             <h3>Hirgenics – AI-Powered Interview Simulation Platform</h3>
@@ -193,7 +182,7 @@
                     <!-- Project 3 -->
                     <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
                         <div class="project-img">
-                            <img src="assets/think ai.png" alt="Project 3">
+                            <img src="assets/think ai.png" alt="Project 3" loading="lazy" decoding="async">
                         </div>
                         <div class="project-info">
                             <h3>Think AI(chatbot)</h3>
@@ -216,56 +205,113 @@
         <section id="certifications" class="cert-section">
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">Certifications</h2>
-                <div class="cert-timeline">
-                    <div class="cert-item" data-aos="fade-left">
-                        <div class="cert-dot"></div>
-                        <div class="cert-content">
-                            <span class="cert-date">2025</span>
-                            <h3>Introduction to C Essentials</h3>
-                            <p>Cisco certification</p>
+                        <div class="cert-scroll" role="list" tabindex="0" aria-label="Certifications">
+                            <div class="cert-track">
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/git and github.jpeg" alt="Git &amp; GitHub Workshop Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>Git &amp; GitHub Workshop</h3>
+                                        <p>Participation certificate</p>
+                                    </div>
+                                </article>
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/machine learning and data science.jpeg" alt="Machine Learning and Data Science Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>Machine Learning and Data Science</h3>
+                                        <p>EduSkills certification</p>
+                                    </div>
+                                </article>
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/nptl.jpeg" alt="NPTEL Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>NPTEL Certification</h3>
+                                        <p>Course completion certificate</p>
+                                    </div>
+                                </article>
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/oracle.jpeg" alt="Oracle Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>Oracle Certification</h3>
+                                        <p>Oracle certification</p>
+                                    </div>
+                                </article>
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/python from geeks for geeks.jpeg" alt="Python from Geeks for Geeks Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>Python from Geeks for Geeks</h3>
+                                        <p>Course completion certificate</p>
+                                    </div>
+                                </article>
+                                <!-- Duplicate cards for infinite scroll -->
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/git and github.jpeg" alt="Git &amp; GitHub Workshop Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>Git &amp; GitHub Workshop</h3>
+                                        <p>Participation certificate</p>
+                                    </div>
+                                </article>
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/machine learning and data science.jpeg" alt="Machine Learning and Data Science Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>Machine Learning and Data Science</h3>
+                                        <p>EduSkills certification</p>
+                                    </div>
+                                </article>
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/nptl.jpeg" alt="NPTEL Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>NPTEL Certification</h3>
+                                        <p>Course completion certificate</p>
+                                    </div>
+                                </article>
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/oracle.jpeg" alt="Oracle Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>Oracle Certification</h3>
+                                        <p>Oracle certification</p>
+                                    </div>
+                                </article>
+                                <article class="cert-card" role="listitem">
+                                    <div class="cert-img">
+                                        <img src="assets/python from geeks for geeks.jpeg" alt="Python from Geeks for Geeks Certificate" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="cert-content">
+                                        <span class="cert-date">2025</span>
+                                        <h3>Python from Geeks for Geeks</h3>
+                                        <p>Course completion certificate</p>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cert-item" data-aos="fade-left" data-aos-delay="100">
-                        <div class="cert-dot"></div>
-                        <div class="cert-content">
-                            <span class="cert-date">2025</span>
-                            <h3>Introduction to python</h3>
-                            <p>Cisco certification</p>
-                        </div>
-                    </div>
-                    <div class="cert-item" data-aos="fade-left" data-aos-delay="200">
-                        <div class="cert-dot"></div>
-                        <div class="cert-content">
-                            <span class="cert-date">2025</span>
-                            <h3>Certificate of participation in Git and GitHub Workshop</h3>
-                            <p>Participation certificate</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
-
-        <!-- Blog Section -->
-        <section id="blog" class="blog-section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Latest Insights</h2>
-                <div class="blog-grid">
-                    <article class="blog-card" data-aos="fade-up">
-                        <div class="blog-date">May 10, 2026</div>
-                        <h3>learning Git & GitHub</h3>
-                        <p>Learning Git and GitHub is a fundamental skill for any software developer. It allows you to manage code versions,collaborate with others, and track changes in your code.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </article>
-                    <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="blog-date">April 22, 2026</div>
-                        <h3>DSA</h3>
-                        <p>Starting from Today(14-05-2026)</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
         <!-- Resume Section -->
         <section id="resume" class="resume-section">
             <div class="container">
@@ -332,9 +378,8 @@
                 <div class="footer-logo">SSDN<span>.</span></div>
                 <p>&copy; 2026 Sowmya Sruthi Devi Nimmala. All rights reserved.</p>
                 <div class="footer-socials">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sowmya-sruthi-devi-nimmala-543696336" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sowmya-sruthidevi" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>

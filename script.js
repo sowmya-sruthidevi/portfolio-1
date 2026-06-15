@@ -53,9 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.getElementById('navLinks');
     const navLinksItems = document.querySelectorAll('.nav-links a');
 
+    if (hamburger) {
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        const isOpen = navLinks.classList.toggle('active');
         hamburger.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', String(isOpen));
     });
 
     // Close mobile menu when a link is clicked
@@ -63,7 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             navLinks.classList.remove('active');
             hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
         });
+    });
+
+    const desktopNavQuery = window.matchMedia('(min-width: 769px)');
+    desktopNavQuery.addEventListener('change', event => {
+        if (event.matches) {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
     });
 
     // 5. Typing Animation for Tagline
